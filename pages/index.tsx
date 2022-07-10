@@ -1,5 +1,22 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+
+
+//svg
+import Java from '../public/java.svg'
+import HTML from '../public/html.svg'
+import CSS from '../public/css.svg'
+import JS from '../public/javascript.svg'
+
+import TS from '../public/typescript.svg'
+import Rct from '../public/react.svg'
+import Nextjs from '../public/nextjs.svg'
+
+import Twi from '../public/twitter.svg'
+import GH from '../public/github.svg'
+
+
 
 export default function Home() {
   return (
@@ -15,21 +32,43 @@ export default function Home() {
           Welcome to My site!
         </h1>
         <div className={styles.profile}>
-            <section className={styles.profileTitle}>
-                <h2>My profile</h2>
-            </section>
-            <section className={styles.detail}>
-                <h3>darakeee</h3>
-                <p>Yuto Torii</p>
-                <h4>Birth day</h4>
-                <p>1999/11/11</p>
-            </section>
-            <section className={styles.skills}>
-                <h4>Skils</h4>
-            </section>
-            <section className={styles.learn}>
-                <h4>Learn</h4>
-            </section>
+          <section className={styles.profileTitle}>
+            <h2>My profile</h2>
+          </section>
+          <section className={styles.detail}>
+            <img src="darakeee.jpg"/>
+            <h3>darakeee</h3>
+            <p>Yuto Torii</p>
+            <div className={styles.alignment}>
+              <a href="https://twitter.com/darake_nai">
+                <Twi/>
+              </a>
+              <a href="https://github.com/darakeee">
+                <GH/>
+              </a>
+            </div>
+          </section>
+          <section className={styles.birthday}>
+            <h4>Birthday</h4>
+            <p>1999/11/11</p>
+          </section>
+          <section className={styles.skills}>
+            <h4>Skills</h4>
+            <div className={styles.svg}>
+              <a><Java/></a>
+              <a><HTML/></a>
+              <a><CSS/></a>
+              <a><JS/></a>
+            </div>
+          </section>
+          <section className={styles.learn}>
+            <h4>Learn</h4>
+            <div className={styles.svg}>
+              <a><TS/></a>
+              <a><Rct/></a>
+              <a><Nextjs/></a>
+            </div>
+          </section>
         </div> 
       </main>
 

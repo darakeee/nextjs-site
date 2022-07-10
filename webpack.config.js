@@ -10,7 +10,7 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
-  entry: "./src/index.ts",
+  entry: "./pages/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -30,11 +30,13 @@ const config = {
   ],
   module: {
     rules: [
+      //ts-loader
       {
         test: /\.(ts|tsx)$/i,
         loader: "ts-loader",
         exclude: ["/node_modules/"],
       },
+      //sass-setting
       {
         test: /\.s[ac]ss$/i,
         use: [stylesHandler, "css-loader", "postcss-loader", "sass-loader"],
@@ -43,11 +45,17 @@ const config = {
         test: /\.css$/i,
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
+      //check!
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-
+      //svgr
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
+      },
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
