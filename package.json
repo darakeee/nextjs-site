@@ -1,12 +1,16 @@
 {
-  "name": "nextjs-site",
-  "version": "0.1.0",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "webpack --mode=production --node-env=production",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "dependencies": {
     "next": "12.2.2",
@@ -14,7 +18,27 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@webpack-cli/generators": "^2.5.0",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2"
-  }
+    "eslint-config-next": "12.2.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3",
+    "workbox-webpack-plugin": "^6.5.3"
+  },
+  "description": "My webpack project"
 }
