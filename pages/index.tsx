@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 
@@ -17,8 +16,7 @@ import Twi from '../public/twitter.svg'
 import GH from '../public/github.svg'
 
 
-
-export default function Home() {
+export default function Index() {
   return (
     <div className={styles.container}>
       <Head>
@@ -32,12 +30,14 @@ export default function Home() {
           Welcome to My site!
         </h1>
         <div className={styles.profile}>
-          <section className={styles.profileTitle}>
-            <h2>My profile</h2>
+          <section className={styles.menu}>
+            <h2>Profile</h2>
+            <h3>History</h3>
           </section>
           <section className={styles.detail}>
             <img src="darakeee.jpg"/>
-            <h3>darakeee</h3>
+            <h3>Name</h3>
+            <h4>darakeee</h4>
             <p>Yuto Torii</p>
             <div className={styles.alignment}>
               <a href="https://twitter.com/darake_nai">
@@ -49,11 +49,11 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.birthday}>
-            <h4>Birthday</h4>
+            <h3>Birthday</h3>
             <p>1999/11/11</p>
           </section>
           <section className={styles.skills}>
-            <h4>Skills</h4>
+            <h3>Skills</h3>
             <div className={styles.svg}>
               <a><Java/></a>
               <a><HTML/></a>
@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </section>
           <section className={styles.learn}>
-            <h4>Learn</h4>
+            <h3>Learn</h3>
             <div className={styles.svg}>
               <a><TS/></a>
               <a><Rct/></a>
@@ -73,7 +73,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Copyright © 2021 darakeee.</p>
+        <p>Copyright © 2022 darakeee.</p>
       </footer>
     </div>
   )

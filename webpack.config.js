@@ -19,10 +19,6 @@ const config = {
     host: "localhost",
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "index.html",
-    }),
-
     new MiniCssExtractPlugin(),
 
     // Add your plugins here
