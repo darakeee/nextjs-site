@@ -1,6 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
-
 
 //svg
 import Java from '../public/java.svg'
@@ -32,7 +32,7 @@ export default function Index() {
         <div className={styles.profile}>
           <section className={styles.menu}>
             <h2>Profile</h2>
-            <h3>History</h3>
+            <Link href="/history"><h3>History</h3></Link>
           </section>
           <section className={styles.detail}>
             <img src="darakeee.jpg"/>

@@ -21,6 +21,7 @@
       justify-content: center;
     }
 
+    //index.scss
     .profile{
       width: auto;
       height: auto;
@@ -138,6 +139,41 @@
           color: $fontColor;
         }
       } 
+    }
+
+    //history.scss
+    .history{
+      width: auto;
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+
+      //sectionごとに空白
+      section{
+        padding:0.5rem;
+      }
+
+      .menu{
+        text-align: center;
+        h2 {
+          display: inline-block;
+          margin: 1rem;
+          font-size: 3rem;
+          font-family: $fontStyle;
+          text-align: center;
+          color: $fontColor;
+        }
+        h3{
+          display: inline-block;
+          margin: 1rem;
+          font-size: 3rem;
+          font-family: $fontStyle;
+          text-align: center;
+          color: $fontColor2;
+        }
+      }
     }
   }
   

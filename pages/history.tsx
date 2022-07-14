@@ -1,12 +1,13 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
-//svg
-import Twi from '../public/twitter.svg'
-import GH from '../public/github.svg'
-
-
 export default function History() {
+  const today = new Date();
+  const yy = today.getFullYear();
+  const mm = today.getMonth() + 1;
+  const dd = today.getDay();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,10 +22,24 @@ export default function History() {
         </h1>
         <div className={styles.history}>
             <section className={styles.menu}>
-                <h3>Profile</h3>
+                <Link href="/"><h3>Profile</h3></Link>
                 <h2>History</h2>
             </section>
-            <section className={styles.detail}>    
+            <section className={styles.detail}>
+              <ul className={styles.timeline}>
+                <li>
+                  <p className={styles.timelineDate}>1999/11/11</p>
+                  <div className={styles.timelineContent}>
+                    <h3>Born in Nagoya:D</h3>
+                  </div>
+                </li>
+                <li>
+                  <p className={styles.timelineDate}></p>
+                  <div className={styles.timelineContent}>
+                    <h3>Now.</h3>
+                  </div>
+                </li>
+              </ul>    
             </section>
         </div> 
       </main>
