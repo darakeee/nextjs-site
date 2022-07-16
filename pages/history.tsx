@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
+//dayjs
+import dayjs from 'dayjs'
+
 export default function History() {
-  const today = new Date();
-  const yy = today.getFullYear();
-  const mm = today.getMonth() + 1;
-  const dd = today.getDay();
+  //generate today's date
+  const today = dayjs();
 
   return (
     <div className={styles.container}>
@@ -30,13 +31,13 @@ export default function History() {
                 <li>
                   <p className={styles.timelineDate}>1999/11/11</p>
                   <div className={styles.timelineContent}>
-                    <h3>Born in Nagoya:D</h3>
+                    <h4>Born in Nagoya:D</h4>
                   </div>
                 </li>
                 <li>
-                  <p className={styles.timelineDate}></p>
+                  <p className={styles.timelineDate}>{today.format('YYYY/MM/DD')}</p>
                   <div className={styles.timelineContent}>
-                    <h3>Now.</h3>
+                    <h4>Now.</h4>
                   </div>
                 </li>
               </ul>    
@@ -50,3 +51,5 @@ export default function History() {
     </div>
   )
 }
+
+
