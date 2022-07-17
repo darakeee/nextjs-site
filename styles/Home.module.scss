@@ -177,6 +177,34 @@
       .detail{
         .timeline{
           color: $fontColor;
+          list-style: none;
+          text-align: center;
+          li {
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+          }
+        }
+        .timelineDate {
+          width: 111px;
+          float: left;
+          margin-top: 20px;
+        }
+        .timelineContent {
+          width: 75%;
+          float: left;
+          border-left: 3px $fontColor solid;
+          padding-left: 30px;
+        }
+        .timelineContent:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: $fontColor;
+          position: absolute;
+          left: 106px;
+          top: 24px;
+          border-radius: 100%;
         }
       }
     }

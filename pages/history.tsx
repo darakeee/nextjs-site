@@ -34,6 +34,14 @@ export default function History() {
                     <h4>Born in Nagoya:D</h4>
                   </div>
                 </li>
+
+                <li>
+                  <p className={styles.timelineDate}>2019/04</p>
+                  <div className={styles.timelineContent}>
+                    <h4>名古屋工学院専門学校入学</h4>
+                  </div>
+                </li>
+
                 <li>
                   <p className={styles.timelineDate}>{today.format('YYYY/MM/DD')}</p>
                   <div className={styles.timelineContent}>
