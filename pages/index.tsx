@@ -35,7 +35,7 @@ export default function Index() {
             <Link href="/history"><h3>History</h3></Link>
           </section>
           <section className={styles.detail}>
-            <img src="darakeee.jpg"/>
+            <img src="Me.jpg"/>
             <h3>Name</h3>
             <h4>darakeee</h4>
             <p>Yuto Torii</p>
