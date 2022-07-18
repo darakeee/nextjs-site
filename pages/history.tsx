@@ -43,6 +43,27 @@ export default function History() {
                 </li>
 
                 <li>
+                  <p className={styles.timelineDate}>2019/11</p>
+                  <div className={styles.timelineContent}>
+                    <h4>基本情報技術者試験合格</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <p className={styles.timelineDate}>2021/09</p>
+                  <div className={styles.timelineContent}>
+                    <h4>HTML、CSS、JS(jQuery)を使用した静的サイトの作成</h4>
+                  </div>
+                </li>
+
+                <li>
+                  <p className={styles.timelineDate}>2022/07</p>
+                  <div className={styles.timelineContent}>
+                    <h4>当サイトの作成</h4>
+                  </div>
+                </li>
+
+                <li>
                   <p className={styles.timelineDate}>{today.format('YYYY/MM/DD')}</p>
                   <div className={styles.timelineContent}>
                     <h4>Now.</h4>
