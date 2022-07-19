@@ -27,7 +27,7 @@ export default function Index() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to My site!
+          Welcome to my site!
         </h1>
         <div className={styles.profile}>
           <section className={styles.menu}>

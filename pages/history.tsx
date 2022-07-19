@@ -19,7 +19,7 @@ export default function History() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to My site!
+          This is my story!
         </h1>
         <div className={styles.history}>
             <section className={styles.menu}>
@@ -31,42 +31,42 @@ export default function History() {
                 <li>
                   <p className={styles.timelineDate}>1999/11/11</p>
                   <div className={styles.timelineContent}>
-                    <h4>Born in Nagoya:D</h4>
+                    <p>Born in Nagoya:D</p>
                   </div>
                 </li>
 
                 <li>
                   <p className={styles.timelineDate}>2019/04</p>
                   <div className={styles.timelineContent}>
-                    <h4>名古屋工学院専門学校 入学</h4>
+                    <p>名古屋工学院専門学校 入学</p>
                   </div>
                 </li>
 
                 <li>
                   <p className={styles.timelineDate}>2019/11</p>
                   <div className={styles.timelineContent}>
-                    <h4>基本情報技術者試験 合格</h4>
+                    <p>基本情報技術者試験 合格</p>
                   </div>
                 </li>
 
                 <li>
                   <p className={styles.timelineDate}>2021/09</p>
                   <div className={styles.timelineContent}>
-                    <h4>HTML、CSS、JavaScript(jQuery)を使用した静的サイトの作成</h4>
+                    <p>HTML、CSS、JavaScript(jQuery)を使用した静的サイトの作成</p>
                   </div>
                 </li>
 
                 <li>
                   <p className={styles.timelineDate}>2022/07</p>
                   <div className={styles.timelineContent}>
-                    <h4>Next.js、TSX、SCSSを使用した静的サイト(当サイト)の作成</h4>
+                    <p>Next.js、TSX、SCSSを使用した静的サイト(当サイト)の作成</p>
                   </div>
                 </li>
 
                 <li>
                   <p className={styles.timelineDate}>{today.format('YYYY/MM/DD')}</p>
                   <div className={styles.timelineContent}>
-                    <h4>Now.</h4>
+                    <p>Now.</p>
                   </div>
                 </li>
               </ul>    
