@@ -1,11 +1,14 @@
 @import "setting/fontPreset";
 @import "setting/restriction";
+@import "layout/index";
+@import "layout/history";
 
 .container {
+  @extend .rest;
+  min-height: 100vh;
   background: $backColor;
   font-family: $fontStyle;
   .main {
-    @extend .rest;
     .title {
       font-size: 4rem;
       color:  $fontColor;
@@ -204,7 +207,6 @@
   }
   
   .footer {
-    @extend .rest;
     font-size: 1rem;
     padding: 0.5rem;
     justify-content: center;
