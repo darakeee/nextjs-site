@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 //svg
@@ -35,7 +36,11 @@ export default function Index() {
             <Link href="/history"><h3>History</h3></Link>
           </section>
           <section className={styles.detail}>
-            <img src="Me.jpg"/>
+            <Image className={styles.avatar}
+              src="/Me.jpg"
+              width={250}
+              height={250}
+            />
             <h3>《Name》</h3>
             <h4>darakeee</h4>
             <p>Yuto Torii</p>
