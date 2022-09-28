@@ -1,0 +1,119 @@
+//index's layout
+.profile{
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    //sectionごとに空白
+    section{
+      padding:0.5rem;
+    }
+
+    .menu{
+      text-align: center;
+      h2 {
+        display: inline-block;
+        margin: 1rem;
+        font-size: 3rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+      h3{
+        display: inline-block;
+        margin: 1rem;
+        font-size: 3rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColorSub;
+      }
+    }
+
+    .detail{
+      text-align: center;
+      .alignment{
+        margin-top: -0.3rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        a{
+          margin: 1.5rem;
+        }
+      }
+
+      img{
+        display: block;
+        margin: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+      }
+      h3 {
+        font-size: 2.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+      h4 {
+        margin-bottom: -0.5rem; 
+        font-size: 2rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+      p {
+        font-size: 1.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColorSub;
+      }
+    }
+
+    .birthday{
+      h3 {
+        font-size: 2.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+      p {
+        font-size: 1.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+    }
+
+    .skills{
+      text-align: center;
+      .svg{
+        display: inline-block;
+      }
+      h3 {
+        font-size: 2.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+    }
+      
+    .learn{
+      text-align: center;
+      .svg{
+          display: inline-block;
+          a{
+            margin: 0.5rem;
+          }
+      }
+      h3 {
+        font-size: 2.5rem;
+        font-family: $fontStyle;
+        text-align: center;
+        color: $fontColor;
+      }
+    } 
+}

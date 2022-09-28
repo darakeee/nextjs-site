@@ -1,0 +1,35 @@
+@import "setting/fontPreset";
+@import "setting/restriction";
+@import "layout/index";
+@import "layout/history";
+
+.container {
+  @extend .rest;
+  min-height: 100vh;
+  background: $backColor;
+  font-family: $fontStyle;
+  .main {
+    .title {
+      font-size: 4rem;
+      color:  $fontColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    //index.scss
+    @extend .profile;
+    //history.scss
+    @extend .history;
+  }
+  
+  .footer {
+    font-size: 1rem;
+    padding: 0.5rem;
+    justify-content: center;
+    p {
+      color: $fontColor;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

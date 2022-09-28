@@ -1,0 +1,73 @@
+//history's layout
+.history{
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    //sectionごとに空白
+    section{
+      padding:0.5rem;
+    }
+
+    .menu{
+        text-align: center;
+        h2{
+            display: inline-block;
+            margin: 1rem;
+            font-size: 3rem;
+            font-family: $fontStyle;
+            text-align: center;
+            color: $fontColor;
+        }
+        h3{
+            display: inline-block;
+            margin: 1rem;
+            font-size: 3rem;
+            font-family: $fontStyle;
+            text-align: center;
+            color: $fontColorSub;
+        }
+    }
+    .detail{
+        .timeline{
+            list-style: none;
+            text-align: center;
+            li{
+                overflow: hidden;
+                margin: 0;
+                position: relative;
+            }
+        }
+        .timelineDate {
+            font-size: 20px;
+            color: $fontColor;
+            width: 155px;
+            float: left;
+            margin-top: 20px;
+        }
+        .timelineContent {
+            p{
+                font-size: 20px;
+                color: $fontColor;
+            }
+            width: 80%;
+            float: left;
+            border-left: 3px $fontColor solid;
+            padding-left: 30px;
+        }
+        //timelineの丸
+        .timelineContent:before {
+            content: '';
+            width: 13px;
+            height: 13px;
+            background: $fontColor;
+            position: absolute;
+            left: 150px;
+            top: 24px;
+            border-radius: 100%;
+        }
+    }
+}
