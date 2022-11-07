@@ -38,6 +38,7 @@ export default function Index() {
           <section className={styles.detail}>
             <Image className={styles.avatar}
               src="/Me.jpg"
+              alt="my photo"
               width={250}
               height={250}
             />
