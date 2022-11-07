@@ -1,4 +1,6 @@
 //history's layout
+
+//For PC
 .history{
     width: auto;
     height: auto;
@@ -20,7 +22,11 @@
             font-size: 3rem;
             font-family: $fontStyle;
             text-align: center;
-            color: $fontColor;
+
+            //gradationText
+            background: $selectedColor;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         h3{
             display: inline-block;
@@ -28,7 +34,7 @@
             font-size: 3rem;
             font-family: $fontStyle;
             text-align: center;
-            color: $fontColorSub;
+            color: $fontColor;
         }
     }
     .detail{
@@ -70,4 +76,14 @@
             border-radius: 100%;
         }
     }
+}
+
+//For iPad and Tablet
+@media screen and (max-width: 768px) {
+  
+}
+
+//For iPhone and Android
+@media screen and (max-width: 480px) {
+  
 }

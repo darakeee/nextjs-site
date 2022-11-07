@@ -1,4 +1,6 @@
 //index's layout
+
+//For PC
 .profile{
     width: auto;
     height: auto;
@@ -20,7 +22,11 @@
         font-size: 3rem;
         font-family: $fontStyle;
         text-align: center;
-        color: $fontColor;
+        
+        //gradationText
+        background: $selectedColor;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       h3{
         display: inline-block;
@@ -28,7 +34,7 @@
         font-size: 3rem;
         font-family: $fontStyle;
         text-align: center;
-        color: $fontColorSub;
+        color: $fontColor;
       }
     }
 
@@ -66,7 +72,10 @@
         font-size: 1.5rem;
         font-family: $fontStyle;
         text-align: center;
-        color: $fontColorSub;
+        color: $fontColor;
+      }
+      svg{
+        fill:$svgColor;
       }
     }
 
@@ -87,8 +96,12 @@
 
     .skills{
       text-align: center;
-      .svg{
-        display: inline-block;
+      a{
+        margin: 0.5rem;
+        svg{
+          display: inline-block;
+          fill:$svgColor;
+        }
       }
       h3 {
         font-size: 2.5rem;
@@ -100,11 +113,12 @@
       
     .learn{
       text-align: center;
-      .svg{
+      a{
+        margin: 0.5rem;
+        svg{
           display: inline-block;
-          a{
-            margin: 0.5rem;
-          }
+          fill:$svgColor;
+        }
       }
       h3 {
         font-size: 2.5rem;
@@ -113,4 +127,14 @@
         color: $fontColor;
       }
     } 
+}
+
+//For iPad and Tablet
+@media screen and (max-width: 768px) {
+  
+}
+
+//For iPhone and Android
+@media screen and (max-width: 480px) {
+  
 }

@@ -1,17 +1,22 @@
-@import "setting/fontPreset";
-@import "setting/restriction";
+@import "foundation/color";
+@import "foundation/font";
+@import "foundation/restriction";
 @import "layout/index";
 @import "layout/history";
 
 .container {
   @extend .rest;
   min-height: 100vh;
-  background: $backColor;
+  background: $backGroundColor;
   font-family: $fontStyle;
   .main {
     .title {
+      //gradationText
+      background: $title;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
       font-size: 4rem;
-      color:  $fontColor;
       display: flex;
       align-items: center;
       justify-content: center;
