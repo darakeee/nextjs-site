@@ -43,7 +43,7 @@ export default function Index() {
               height={250}
             />
             <h3>《Name》</h3>
-            <h4>darakeee</h4>
+            <h4>dara</h4>
             <p>Yuto Torii</p>
             <div className={styles.alignment}>
               <a href="https://twitter.com/darake_nai">
@@ -79,7 +79,7 @@ export default function Index() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Copyright © 2022 darakeee.</p>
+        <p>Copyright © 2022 dara.</p>
       </footer>
     </div>
   )

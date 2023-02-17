@@ -75,7 +75,7 @@ export default function History() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Copyright © 2022 darakeee.</p>
+        <p>Copyright © 2022 dara.</p>
       </footer>
     </div>
   )
